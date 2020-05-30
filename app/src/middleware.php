@@ -15,7 +15,7 @@ $app->add(new RKA\Middleware\IpAddress(true,['10.0.0.1', '10.0.0.2']))
     $route = $request->getAttribute('route'); 
     if(null === $route){ return $response->withStatus(404);}
 
-    $group = strstr(substr($request->getUri()->getPath(),1), '/', true);
+    $group = strstr(substr($request->getUri()->getPath(),5), '/', true);
 
    if($group != "login")
     {   
