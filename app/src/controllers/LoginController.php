@@ -17,7 +17,7 @@ Class LoginController
     public function login($request){
     
         $RequestBody = $request->getParsedBody();
-      
+     
         if( empty($RequestBody['username']) || empty($RequestBody['password'])|| empty($RequestBody['ip_address']) )
         {
             return $this->app->response->withJson('Wrong Request Body',400 );      
@@ -95,12 +95,6 @@ Class LoginController
         }
         return $this->app->response;
     }
-
-   
-    
-
-
-   
 
 }
 ?>
