@@ -1,3 +1,4 @@
 app/logs/
 app/src/settings.php
 .*
+/app/nbproject/private/
